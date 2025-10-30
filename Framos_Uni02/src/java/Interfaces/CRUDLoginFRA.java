@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package Interfaces;
+
+import Modelo.ClsUsuarioFRA;
 
 /**
  *
  * @author Mi Equipo
+ * Operaciones permitidas para la autenticación dentro del sistema FRA.
  */
 public interface CRUDLoginFRA {
     
+
+    ClsUsuarioFRA iniciarSesion(String correo, String contrasena);
 }

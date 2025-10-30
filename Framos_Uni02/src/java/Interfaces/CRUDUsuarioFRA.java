@@ -1,13 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package Interfaces;
+
+import Modelo.ClsRolFRA;
+import Modelo.ClsUsuarioFRA;
+import java.util.List;
 
 /**
  *
  * @author Mi Equipo
+ * Contrato para las operaciones relacionadas a los usuarios del sistema FRA.
  */
 public interface CRUDUsuarioFRA {
     
+
+    List<ClsUsuarioFRA> listarUsuarios();
+
+    ClsUsuarioFRA obtenerPorId(int idUsuario);
+
+    boolean registrar(ClsUsuarioFRA usuario);
+
+    boolean actualizar(ClsUsuarioFRA usuario);
+
+    boolean actualizarEstado(int idUsuario, boolean activo);
+
+    List<ClsRolFRA> listarRoles();
 }
